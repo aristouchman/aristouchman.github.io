@@ -270,6 +270,22 @@
       padding: 20px;
       background-color: #fff;
     }
+#request-birth-cert {
+  background: linear-gradient(to right, #f9f9f9, #eaf3ff);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#request-birth-cert form input,
+#request-birth-cert form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
   </style>
 </head>
 <body>
@@ -298,7 +314,6 @@
  
 </body>
 </html>
-
 
   <div class="container">
     <a href="CV_Felix_Okoh.pdf" class="btn" download style="float:right; margin-top: 10px;">📄 Download My CV</a>
@@ -424,12 +439,37 @@
     <a href="CV_Felix_Okoh.pdf" target="_blank">📄 CV</a>
     <a href="BSc_Certificate.pdf" target="_blank">🎓 B.Sc. Certificate</a>
     <a href="OND_Certificate.pdf" target="_blank">📘 OND Certificate</a>
-    <a href="Birth_Certificate.pdf" target="_blank">🧾 Birth Certificate</a>
     <a href="NYSC_Certificate.pdf" target="_blank">🎖️ NYSC Certificate</a>
     <a href="Olevel_Result.pdf" target="_blank">📄 O’Level Result</a>
     <a href="SECP_Certificate.pdf" target="_blank">📘 SECP Certificate</a>
+    <a href="#request-birth-cert" style="color: #0a4f84; font-weight: 600;">🧾 Birth Certificate (Access Required)</a>
     <div style="margin-top: 20px;">
+
+<section id="request-birth-cert">
+  <h2>Request Access to Birth Certificate</h2>
+  <form action="https://formsubmit.co/felix.u.okoh@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Birth Certificate Access Request">
+    <input type="hidden" name="_template" value="box">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="name">Full Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label for="email">Email Address</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label for="reason">Why do you need this document?</label><br>
+    <textarea name="reason" rows="4" required></textarea><br><br>
+
+    <button type="submit" class="btn">Submit Request</button>
+  </form>
+</section>
+</div>
+</section>
+
+<section id="uploads">
   <h3>Photo Preview</h3>
+  <div class="uploads">
   <a href="preview1.jpg" onclick="openLightbox(event, 'preview1.jpg')"><img src="preview1.jpg" alt="Preview 1" style="max-width: 200px; margin: 10px; cursor: zoom-in;"></a>
   <a href="preview2.jpg" onclick="openLightbox(event, 'preview2.jpg')"><img src="preview2.jpg" alt="Preview 2" style="max-width: 200px; margin: 10px; cursor: zoom-in;"></a>
 </div>
